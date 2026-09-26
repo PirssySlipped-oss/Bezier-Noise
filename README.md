@@ -188,4 +188,4 @@ Here are more exmaples for Bezier Noise
 
 <img width="608" height="247" alt="image" src="https://github.com/user-attachments/assets/f44cf46e-6c42-48e5-b22b-d0cb058237e5" />
 
-## Credits to Pierre Bézier, Paul de Casteljau and Pirssy Slipped
+## Credits to Paul de Casteljau, Pierre Bézier and Pirssy Slipped
