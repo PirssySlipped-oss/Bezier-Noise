@@ -171,3 +171,10 @@ This is a demonstration to how it works in roblox studio:
 The red dots you see are control points that have the same slope as the previous points. If you look closely, they pretty much sit on the same line
 
 <img width="435" height="215" alt="image" src="https://github.com/user-attachments/assets/5d6d89e5-8994-4685-a98a-b0282e30722f" />
+
+Here are more exmaples for Bezier Noise
+
+<img width="620" height="238" alt="image" src="https://github.com/user-attachments/assets/05abe390-c435-49a5-a5a6-5e0f9f1230bb" />
+<img width="618" height="237" alt="image" src="https://github.com/user-attachments/assets/7d78b020-3f74-4c39-b09c-3bc1fa33f8ff" />
+<img width="611" height="238" alt="image" src="https://github.com/user-attachments/assets/32232071-05f4-4fc4-a774-73b8e2f2247f" />
+
