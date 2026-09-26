@@ -163,3 +163,9 @@ script.Parent.Animation.MouseButton1Click:Connect(function()
 		wait = false
 	end
 end)```
+
+
+
+
+https://github.com/user-attachments/assets/2f76c7c6-dc0e-4280-a1cd-91db3ceaf841
+
