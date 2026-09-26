@@ -1,6 +1,8 @@
 # Bezier-Noise
 Bezier Noise is a new type of noise algorithm I made, to explain shorly how it works, connect a bunch of bezier curves together, and every bezier curve is connected by Anchor points and control points with random heights.
 
+##First, what is a bezier curve?
+If youdon't know what a bezier curve is, to explain breifly
 
 ##How it works?
 The way the algorithm works is pretty simple, first, just create points, you can space them horizontally however you want, but at first I spaced them evenly so each point has an equal distance from the previous point and the next point.
@@ -8,6 +10,8 @@ The way the algorithm works is pretty simple, first, just create points, you can
 Second step is to just apply a bezier curve for every 3 points, a bezier curve starts from the last point of the previous bezier curve, except for the first one, then you have a control point and the last point, all of which have random heights.
 
 If you had done it like this, there would be most likely alot of sharp turns, to fix this we need the control point of every curve to have the same slope as the line that the last point of the previous bezier curve and the control point of the previous bezier curve makes. After this change we can draw bezier curves and there won't be any sharp turns.
+
+The following program I am going to share with you is the code for drawing the graph in roblox studio. I don't expect you to understand it if you don't know the programming language of roblox, Luau, but i recommend you read the lines that describe the function of plotting the anchor points and control points, which is called "CreateControlPoints(Amount)"
 
 ```lua
 --This program was made by pirssy_slipped
@@ -36,26 +40,6 @@ local wait = false
 
 local drag = false
 --\\Program
-
-local function CalculateSlope(v1 : Vector2,v2 : Vector2)
-	local slope = v1.Y - v2.Y/v1.X - v2.X
-	return slope
-end
-
---[[local function draw_bezier()
-	for t = 0, 1, 1/PaintAmount do
-		local frame
-		local line1 = anchor.Position:Lerp(controlPoint.Position, t)
-		local line2 = controlPoint.Position:Lerp(anchor2.Position, t)
-
-		local bezier = line1:Lerp(line2, t)
-		print(t*PaintAmount)
-		local paint = PaintPoints[math.floor(t * 100)]
-		paint.Parent = Board
-		paint.Visible = true
-		paint.Position = UDim2.new(0, bezier.X,0, bezier.Y)
-	end
-end]]
 
 local function draw_bezier(p1 : Vector2,p2 : Vector2,p3 : Vector2)
 	for t = 0, 1, 1/PaintAmount do
