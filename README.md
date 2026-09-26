@@ -19,7 +19,6 @@ The following program I am going to share with you is the code for drawing the g
 
 ```lua
 --This program was made by pirssy_slipped
---Bezier noise was invented by pirssy_slipped
 --\\Services
 local PlayersService = game:GetService("Players")
 --\\Variables
