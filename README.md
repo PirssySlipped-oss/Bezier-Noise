@@ -1,8 +1,11 @@
-# Bezier-Noise
+# Bézier-Noise
 Bezier Noise is a new type of noise algorithm I made, to explain shorly how it works, connect a bunch of bezier curves together, and every bezier curve is connected by Anchor points and control points with random heights.
 
-## What is a bezier curve?
-If youdon't know what a bezier curve is, to explain breifly
+## What is a Bézier curve?
+Bézier curve is a curve that was invented by Pierre Bézier and Paul de Casteljau. To explain briefly, it is a that is defined bytwo anchor points and one control point, now imagnie sliding another points across the the first anchor point and the control point, and at the same time sliding another point from the control point to the last anchor point, the positions of the sliding points is the defined by the variable t, which goes from 0 to 1, now imagine drawing a line from the two sliding points, and on that line have another point that is sliding from the first sliding point to the other, and as the point slides it traces a prefect smooth line.
+
+<img width="809" height="404" alt="image" src="https://github.com/user-attachments/assets/ced6c78f-b516-4202-8912-3fb44f500f54" />
+
 
 ## How it works?
 
