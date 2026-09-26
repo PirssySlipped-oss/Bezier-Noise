@@ -1,10 +1,10 @@
 # Bezier-Noise
 Bezier Noise is a new type of noise algorithm I made, to explain shorly how it works, connect a bunch of bezier curves together, and every bezier curve is connected by Anchor points and control points with random heights.
 
-##First, what is a bezier curve?
+## First, what is a bezier curve?
 If youdon't know what a bezier curve is, to explain breifly
 
-##How it works
+## How it works
 
 The way the algorithm works is pretty simple, first, just create points, you can space them horizontally however you want, but at first I spaced them evenly so each point has an equal distance from the previous point and the next point.
 
