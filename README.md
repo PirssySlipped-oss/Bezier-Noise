@@ -162,8 +162,12 @@ script.Parent.Animation.MouseButton1Click:Connect(function()
 	else
 		wait = false
 	end
-end)```
+end)
+```
+This is a demonstration to how it works in roblox studio:
 
+<img width="800" height="600" alt="BezierCurveDemo-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/dbabea19-6ff0-4d7b-82f7-bef59355f7b2" />
 
-<img width="800" height="600" alt="BezierCurveDemo-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/657590cc-96f3-4a84-8035-9bdd1305f6df" />
+The red dots you see are control points that have the same slope as the previous points. If you look closely, they pretty much sit on the same line
 
+<img width="435" height="215" alt="image" src="https://github.com/user-attachments/assets/5d6d89e5-8994-4685-a98a-b0282e30722f" />
