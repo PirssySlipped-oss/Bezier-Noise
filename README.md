@@ -14,9 +14,12 @@ I took the following image from: https://javascript.info/bezier-curve, which exp
 
 The way the algorithm works is pretty simple, first, just create points, you can space them horizontally however you want, but at first I spaced them evenly so each point has an equal distance from the previous point and the next point.
 
-Second step is to just apply a bezier curve for every 3 points, a bezier curve starts from the last point of the previous bezier curve, except for the first one, then you have a control point and the last point, all of which have random heights.
+Second step is to just apply a bezier curve for every 3 points, a bezier curve starts from the last point of the previous bezier curve, except for the first one, then you have a control point and the last point, all of which have random heights. Let's see the results!
 
-If you had done it like this, there would be most likely alot of sharp turns, to fix this we need the control point of every curve to have the same slope as the line that the last point of the previous bezier curve and the control point of the previous bezier curve makes. After this change we can draw bezier curves and there won't be any sharp turns.
+<img width="611" height="187" alt="image" src="https://github.com/user-attachments/assets/4fb02dd4-414b-480c-b9c4-7215b479d2fd" />
+
+
+Now, If you had done it like this, there would be most likely alot of sharp turns, to fix this we need the control point of every curve to have the same slope as the line that the last point of the previous bezier curve and the control point of the previous bezier curve makes. After this change we can draw bezier curves and there won't be any sharp turns.
 
 The following program I am going to share with you is the code for drawing the graph in roblox studio. I don't expect you to understand it if you don't know the programming language of roblox, Luau, but i recommend you read the lines that describe the function of plotting the anchor points and control points, which is called "CreateControlPoints(Amount)", and I also recommend to read the function that actually draws the bezier curve, which is called "draw_bezier(p1 : Vector2,p2 : Vector2,p3 : Vector2)"
 
