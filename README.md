@@ -4,7 +4,8 @@ Bezier Noise is a new type of noise algorithm I made, to explain shorly how it w
 ##First, what is a bezier curve?
 If youdon't know what a bezier curve is, to explain breifly
 
-##How it works?
+##How it works
+
 The way the algorithm works is pretty simple, first, just create points, you can space them horizontally however you want, but at first I spaced them evenly so each point has an equal distance from the previous point and the next point.
 
 Second step is to just apply a bezier curve for every 3 points, a bezier curve starts from the last point of the previous bezier curve, except for the first one, then you have a control point and the last point, all of which have random heights.
