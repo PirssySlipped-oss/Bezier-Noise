@@ -11,7 +11,7 @@ Second step is to just apply a bezier curve for every 3 points, a bezier curve s
 
 If you had done it like this, there would be most likely alot of sharp turns, to fix this we need the control point of every curve to have the same slope as the line that the last point of the previous bezier curve and the control point of the previous bezier curve makes. After this change we can draw bezier curves and there won't be any sharp turns.
 
-The following program I am going to share with you is the code for drawing the graph in roblox studio. I don't expect you to understand it if you don't know the programming language of roblox, Luau, but i recommend you read the lines that describe the function of plotting the anchor points and control points, which is called "CreateControlPoints(Amount)"
+The following program I am going to share with you is the code for drawing the graph in roblox studio. I don't expect you to understand it if you don't know the programming language of roblox, Luau, but i recommend you read the lines that describe the function of plotting the anchor points and control points, which is called "CreateControlPoints(Amount)", and I also recommend to read the function that actually draws the bezier curve, which is called "draw_bezier(p1 : Vector2,p2 : Vector2,p3 : Vector2)"
 
 ```lua
 --This program was made by pirssy_slipped
@@ -41,6 +41,7 @@ local wait = false
 local drag = false
 --\\Program
 
+-- The function takes three points, lerps between the first point and second point, then lerps between the second point and last point, and then for every lerp iteration, it lerps between the points that are "sliding" on the lines between the first point and the second point, and the line between second point and the last point
 local function draw_bezier(p1 : Vector2,p2 : Vector2,p3 : Vector2)
 	for t = 0, 1, 1/PaintAmount do
 		if p3 then
