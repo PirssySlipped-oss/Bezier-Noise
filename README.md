@@ -14,7 +14,7 @@ I took the following image from: https://javascript.info/bezier-curve, which exp
 
 The way the algorithm works is pretty simple, first, just create points, you can space them horizontally however you want, but at first I spaced them evenly so each point has an equal distance from the previous point and the next point.
 
-Second step is to just apply a bezier curve for every 3 points, a bezier curve starts from the last point of the previous bezier curve, except for the first one, then you have a control point and the last point, all of which have random heights. Let's see the results!
+Second step is to just apply a bezier curve for every 3 points, a bezier curve starts from the last point of the previous bezier curve, except for the first one, then you have a control point and the last point, all of which have random heights. Here is how it looks like:
 
 <img width="611" height="187" alt="image" src="https://github.com/user-attachments/assets/4fb02dd4-414b-480c-b9c4-7215b479d2fd" />
 
@@ -96,7 +96,7 @@ local function CreateControlPoints(Amount)
 	for i = 1, Amount do
 		local point = Vector2.new((Board.AbsoluteSize.X/Amount) * i + math.random(5,20), math.random(middle-50,middle+50))
 		local knot = math.random(1,100)
-		if i > 3 and (i - 1) % 2 ~= 0 then -- Continuity
+		if i > 3 and (i - 1) % 2 ~= 0 then -- Continuity solution:
 			local previousPoint = ContorlPoints[i-1]
 			local previousPoint2 = ContorlPoints[i-2]
 			local slope = (previousPoint - previousPoint2)
