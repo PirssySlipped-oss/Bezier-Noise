@@ -174,7 +174,11 @@ The red dots you see are control points that have the same slope as the previous
 
 Here are more exmaples for Bezier Noise
 
-<img width="620" height="238" alt="image" src="https://github.com/user-attachments/assets/05abe390-c435-49a5-a5a6-5e0f9f1230bb" />
-<img width="618" height="237" alt="image" src="https://github.com/user-attachments/assets/7d78b020-3f74-4c39-b09c-3bc1fa33f8ff" />
+<img width="606" height="243" alt="image" src="https://github.com/user-attachments/assets/c4e007d4-e84c-416d-a6d1-56e5df43fb62" />
+
 <img width="611" height="238" alt="image" src="https://github.com/user-attachments/assets/32232071-05f4-4fc4-a774-73b8e2f2247f" />
+
+<img width="608" height="239" alt="image" src="https://github.com/user-attachments/assets/98966d8f-a13c-4f75-adfd-b4a0714c13cf" />
+
+<img width="608" height="247" alt="image" src="https://github.com/user-attachments/assets/f44cf46e-6c42-48e5-b22b-d0cb058237e5" />
 
