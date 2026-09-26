@@ -165,7 +165,5 @@ script.Parent.Animation.MouseButton1Click:Connect(function()
 end)```
 
 
-
-
-https://github.com/user-attachments/assets/2f76c7c6-dc0e-4280-a1cd-91db3ceaf841
+<img width="800" height="600" alt="BezierCurveDemo-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/657590cc-96f3-4a84-8035-9bdd1305f6df" />
 
