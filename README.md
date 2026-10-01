@@ -1,4 +1,4 @@
-# Atedgi-Noise
+# Bézier-Noise
 Bezier Noise is a new type of noise algorithm I made, to explain shortly how it works, connect a bunch of bezier curves together, and every bezier curve is connected by Anchor points and control points with random heights.
 
 ## What is a Bézier curve?
